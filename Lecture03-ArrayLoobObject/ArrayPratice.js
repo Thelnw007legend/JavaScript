@@ -1,5 +1,8 @@
 let furniture = ['Table', 'Chairs', 'Couch'];
 
 for (let char of furniture) {
-    console.log( char );
+    for(let letter of char){
+    console.log( letter );
+}
+console.log("----");
 }
