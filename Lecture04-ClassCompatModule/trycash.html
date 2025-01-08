@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>My first Web page</h2>
+    <h2>My first Paragraph</h2>
+
+    <p id="demo"></p>
+    <script>
+        try {
+            lalala; //error, varible is not defined!
+        } catch (err){
+            alert(err.name); // ReferenceError
+            alert(err.message);// lalala is not defiend
+            alert(err.stack);
+            // ReferenceError: lalala is not defiend at (...call Stack)
+
+            // Can also show an error as a whole
+            //The error is converted to string as "name: message"
+            alert(err); // ReferenceError: lalala is not defined
+        }
+    </script>
+</body>
+</html>
